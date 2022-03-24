@@ -1,0 +1,11 @@
+1、字段在代码中从来也不会被用到，那么可以命名它为 _
+2、无论变量是一个结构体类型还是一个结构体类型指针，都使用同样的 选择器符（selector-notation） 来引用结构体的字段
+3、type nr number//
+4、type nr=number //3和4之间的区别
+5、for-range 循环数组。此时使用的是数组 ts 的副本
+6、关于defer的理解https://mp.weixin.qq.com/s/Hm8MdrqYgCQPQ4A1nrv4sw
+7、RPC服务
+8、WaitGroup 在调用 Wait() 之后不能再调用 Add() 方法的。
+9、加锁后复制变量，会将锁的状态也复制
+
+
