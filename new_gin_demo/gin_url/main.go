@@ -25,5 +25,12 @@ func main() {
 		})
 	})
 
-	r.Run(":8080")
+	r.GET("/b", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"status": "ok",
+			"name":   "my name is b",
+		})
+	})
+
+	r.Run(":8081")
 }
