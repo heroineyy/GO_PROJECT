@@ -2,8 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/7days-golang" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/bubble" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chat-room" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/crawler-boss" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/go-gin-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/miaosha_demo/miaosha-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/qinxun_go/go-pprof-practice" vcs="Git" />
   </component>
 </project>

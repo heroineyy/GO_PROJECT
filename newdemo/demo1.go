@@ -11,12 +11,12 @@ func (T) bar() {
 func (T) bar1() {
 }
 
-type S struct {
+type S1 struct {
 	*T
 }
 
 func main() {
-	s := S{}
+	s := S1{}
 	_ = s.foo //Q1
 	s.foo()
 	_ = s.bar //Q2

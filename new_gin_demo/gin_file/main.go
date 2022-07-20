@@ -20,20 +20,21 @@ func main() {
 	router.POST("/upload", func(c *gin.Context) {
 		// 单个文件
 		file, err := c.FormFile("f1")
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"message": err.Error(),
-			})
-			return
-		}
 
 		log.Println(file.Filename)
 		dst := fmt.Sprintf("C:/tmp/%s", file.Filename)
+
 		// 上传文件到指定的目录
-		c.SaveUploadedFile(file, dst)
+		err1 := c.SaveUploadedFile(file, dst)
+		if err1 != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": err.Error(),
+			})
+		}
+
 		c.JSON(http.StatusOK, gin.H{
 			"message": fmt.Sprintf("'%s' uploaded!", file.Filename),
 		})
 	})
-	router.Run(":8080")
+	router.Run(":8081")
 }
